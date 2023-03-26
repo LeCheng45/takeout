@@ -13,8 +13,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(RuntimeException.class)
     public R ex1(RuntimeException ex){
-
-        log.info("出现了RuntimeException....");
+        log.info("出现了RuntimeException.....");
         ex.printStackTrace();
 
         return R.error("系统繁忙,请稍后重试");
